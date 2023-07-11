@@ -69,4 +69,4 @@ jobs:
         uses: sarisia/actions-status-discord@v1.11.1
         if: always()
         with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          webhook: ${{ secrets.DISCORD_URINALYSIS_WEBHOOK }}
