@@ -15,9 +15,9 @@ public interface UrinalysisMapper {
     @Select("SELECT * FROM tasks WHERE taskId= #{id}")
     Task findTaskById(Integer id);
     
-    @Select("SELECT * FROM revieweeResults WHERE revieweeResultId= #{id}")
+    @Select("SELECT * FROM reviewee_results WHERE revieweeResultId= #{id}")
     List<Result> searchRevieweeResultById(Integer id);
     
-    @Select("SELECT * FROM reviewerResults WHERE reviewerResultId = #{id}")
+    @Select("SELECT * FROM reviewer_results WHERE reviewerResultId = #{id}")
     List<Result> searchReviewerResultById(Integer id);
 }
