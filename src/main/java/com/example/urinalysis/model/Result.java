@@ -37,16 +37,16 @@ public class Result {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        Result other = (Result) obj;
-        return Objects.equals(id, other.id)
-                && Objects.equals(inspectorName, other.inspectorName)
-                && Objects.equals(rbc, other.rbc)
-                && Objects.equals(wbc, other.wbc)
-                && Objects.equals(squamousEpithelial, other.squamousEpithelial)
-                && Objects.equals(urothelialEpithelial, other.urothelialEpithelial)
-                && Objects.equals(renalTubularEpithelial, other.renalTubularEpithelial)
-                && Objects.equals(other, other.other)
-                && Objects.equals(message, other.message);
+        Result result = (Result) obj;
+        return Objects.equals(id, result.id)
+                && Objects.equals(inspectorName, result.inspectorName)
+                && Objects.equals(rbc, result.rbc)
+                && Objects.equals(wbc, result.wbc)
+                && Objects.equals(squamousEpithelial, result.squamousEpithelial)
+                && Objects.equals(urothelialEpithelial, result.urothelialEpithelial)
+                && Objects.equals(renalTubularEpithelial, result.renalTubularEpithelial)
+                && Objects.equals(other, result.other)
+                && Objects.equals(message, result.message);
     }
     
     @Override
