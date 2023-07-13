@@ -9,8 +9,8 @@ services:
     environment:
       MYSQL_DATABASE: urinalysis_backend_database
       MYSQL_USER: user
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD_urine}
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD_urine}
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
     ports:
       - 3307:3306
     volumes:

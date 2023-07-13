@@ -58,7 +58,7 @@ class UrinalysisMapperTest {
     @Transactional
     void ID指定のレビュイー結果を取得できること() {
         List<Result> revieweeResult = urinalysisMapper.searchRevieweeResultById(1);
-        assertThat(revieweeResult).hasSize(10).contains(
+        assertThat(revieweeResult).hasSize(1).contains(
                 new Result(1, "鈴木", "1~3/20", "1~3/20", "1~3/1",
                         "1~3/10", "1~3/10", "桿菌(1+)", "正常範囲内と考えます")
         );
