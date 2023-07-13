@@ -10,4 +10,7 @@ public interface UrinalysisService {
     
     List<List<Result>> searchResultById(Integer id);
     
+    public Task createTask(String taskName);
+    
+    
 }

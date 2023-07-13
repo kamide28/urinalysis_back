@@ -31,4 +31,9 @@ public class UrinalysisServiceImpl implements UrinalysisService {
                 urinalysisMapper.searchReviewerResultById(task.getReviewerResultId()));
         return result;
     }
+    
+    @Override
+    public Task createTask(String taskName) {
+    
+    }
 }
