@@ -9,8 +9,4 @@ public interface UrinalysisService {
     List<Task> findRecentTasks();
     
     List<List<Result>> searchResultById(Integer id);
-    
-    public Task createTask(String taskName);
-    
-    
 }
