@@ -25,6 +25,9 @@ jobs:
           distribution: 'temurin'
           cache: 'gradle'
 
+      - name: Docker run
+        run: docker compose up -d
+
       - name: Test with Gradle
         run: ./gradlew test
         if: always()
