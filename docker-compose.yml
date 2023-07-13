@@ -7,10 +7,17 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
+<<<<<<< HEAD
       MYSQL_DATABASE: urinalysis_database
       MYSQL_USER: ${MYSQL_USER_urine}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD_urine}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD_urine}
+=======
+      MYSQL_DATABASE: urinalysis_backend_database
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+>>>>>>> b127b8aeffdd05ce04c78744f7b41b7dd2bfe406
     ports:
       - 3307:3306
     volumes:
