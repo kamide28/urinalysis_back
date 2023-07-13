@@ -31,10 +31,6 @@ jobs:
       - name: Test with Gradle
         run: ./gradlew test
         if: always()
-        env:
-          MYSQL_PASSWORD_URINE: ${{ secrets.MYSQL_PASSWORD_urine }}
-        with:
-          spring.datasource.password: ${{ env.MYSQL_PASSWORD_URINE }}
 
       - name: Publish Test Report
         uses: mikepenz/action-junit-report@v3
